@@ -4,5 +4,6 @@ from .views import SnackListView, SnackDeatilView, SnackCreateView, SnackUpdateV
 urlpatterns = [
   path('', SnackListView.as_view(), name="snack_list")
   path('<int:pk>/', SnackDeatilView.as_view(), name="snack_detail")
-  path('')
+  path('create/', SnackCreateView.as_view(), name="snack_create")
+  
 ]
